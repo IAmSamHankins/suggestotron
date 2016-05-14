@@ -8,7 +8,16 @@
 </head>
 <body>
 
+  <% flash.each do |name, message| %>
+      <div><%= message %></div>
+  <% end %>
+  <img src="http://i.imgur.com/MQHYB.jpg" height="100" />
+
 <%= yield %>
+
+<div>
+  <h2> THIS IS ON EVERY PAGE NOW! </h2>
+</div>
 
 </body>
 </html>
